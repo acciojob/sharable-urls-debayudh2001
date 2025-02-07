@@ -1,10 +1,10 @@
 // your code here
-let btn = document.querySelector("button")
+let btn = document.querySelector("#button")
 let name = document.querySelector("#name")
 let year = document.querySelector("#year")
 btn.addEventListener("click", (e) => {
 	e.preventDefault()
-	let heading = document.querySelector("h3")
+	let heading = document.querySelector("#url")
 	if(name.value && year.value){
 		heading.innerText = heading.innerText + `?name=${name.value}&year=${year.value}`
 		name.value = ""
